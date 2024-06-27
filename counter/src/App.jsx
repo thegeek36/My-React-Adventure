@@ -10,12 +10,16 @@ function App() {
 
   const addVal = () => {
     console.log("value added",counter)
-    setCounter(counter + 1);
+    setCounter(prevCounter + 1);
+    setCounter(prevCounter + 1);
+    setCounter(prevCounter + 1);
+    setCounter(prevCounter + 1);
   }
   const removeVal = () => {
     console.log("Value Dismissed",counter);
     if (counter > 0) {
-      setCounter(counter - 1);
+      setCounter(prevCounter - 1);
+      setCounter(prevCounter - 1);
     }
   }
   return (
